@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # Send/receive UDP multicast packets.
 # Requires that your OS kernel supports IP multicast.
@@ -34,7 +34,7 @@ def main(argv):
     try:
       opts, args = getopt.getopt(argv,"s6i:",["inf="])
     except getopt.GetoptError:
-      print 'wrong input'
+      print('wrong input')
       sys.exit(2)
     for opt, arg in opts:
       if opt == '-s':
