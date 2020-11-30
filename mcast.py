@@ -34,7 +34,7 @@ def main(argv):
     try:
       opts, args = getopt.getopt(argv,"s6i:",["inf="])
     except getopt.GetoptError:
-      print 'wrong input'
+      print('wrong input')
       sys.exit(2)
     for opt, arg in opts:
       if opt == '-s':
